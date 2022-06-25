@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../img/h5-revolution-img-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.442);
+}
+
+nav .logo img {
+    width: 80px;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-family: "Oswald";
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav .burger {
+    z-index: 20;
+}
+
+nav .burger a {
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.parallax {
+    position: relative;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider {
+    padding: 90px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    display: flex; 
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 0 90px;
+}
+
+.swiper-content h2 {
+    font-family: "Oswald";
+    font-size: 50px;
+    color: #fff;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgba(255, 255, 255, 0.475);
+}
+
+.swiper-pagination {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 15px;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(184, 184, 184);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+}
+
+.bg1 { 
+    background-image: url("../img/h5-parallax-img-1.jpg"); 
+    background-position: center no-repeat;
+}
+.bg2 {
+    background-image: url("../img/h5-parallax-img-2.jpg"); background-position: center no-repeat;
+}
+
+.row {
+    display: flex;
+}
+
+.col-2 {
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-4 {
+    position: relative;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.tradition .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+}
+
+.tradition .text-content h2 {
+    font-size: 50px;
+    font-family: "Oswald";
+    font-weight: 400;
+}
+
+.tradition .text-content h6 {
+    font-size: 17px;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.tradition .text-content p {
+    font-family: "Raleway";
+    font-size: 14px;
+    line-height: 26px;
+    color: #828282;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.tradition .text-content .btn {
+    background: #c59d5f;
+    padding: 12px 56px;
+    align-self: center;
+    text-decoration: none;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.tradition .text-content .btn:hover {
+    background: #c59c5fc3;
+}
+
+.tradition .text-content .btn span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Oswald";
+    line-height: 1.5em;
+}
+
+.col-2.img-content {
+    height: 100%;
+    min-width: 50%;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2.img-content img {
+    display: block;
+}
+
+.beer-tradition {
+    background: url("../img/h5-el-holder-img-1-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pub-story {
+    background: url("../img/h5-el-holder-img-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row .gallery-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.row .gallery-item img {
+    position: relative;
+    min-width: 100%;
+    z-index: 0;
+    display: block;
+    transition: 0.5s;
+}
+
+.row .gallery-item .overlay-plus {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(197,157,95,.85);
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .gallery-item .overlay-plus span {
+    font-size: 90px;
+    color: #fff;
+}
+
+.row .gallery-item:hover .overlay-plus {
+    opacity: 1;
+}
+
+.row .gallery-item:hover img {
+    transform: scale(1.1);
+    filter: grayscale(1);
+}
+
+.services {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.services .row {
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    transition: .5s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item .img-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 1s;
+    opacity: 0.7;
+}
+
+.service-item:hover .img-content {
+    opacity: 1;
+}
+
+.service-item .img-content img {
+    transition: 0.7s;
+}
+
+.service-item:hover .img-content img {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.325));
+}
+
+.service-item .text-content {
+    text-align: center;
+}
+
+.service-item .text-content h6 {
+    color: #303030;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: 700;
+}
+
+.service-item .text-content p {
+    font-family: "Raleway";
+    font-size: 14px;
+    line-height: 26px;
+    color: #828282;
+    font-weight: 400;
+}
+
+.pricing {
+    padding: 80px 50px;
+}
+
+.pricing .heading-text {
+    text-align: center;
+    color: #fff;
+}
+
+.pricing .heading-text h3 {
+    font-family: Oswald;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.pricing .heading-text p {
+    font-size: 17px;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.885);
+    margin-top: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    filter: grayscale(1);
+    pointer-events: none;
+}
+
+@media(max-width: 1000px) {
+
+    .tradition .row {
+        flex-direction: column;
+    }
+
+    .gallery .row {
+        flex-direction: row;
+    }
+
+    .col-2 {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .services .row .col-4 .service-item {
+        margin-top: 10px;
+    }
+
+    .services .row .col-4 {
+        flex: 0 0 50%;
+        min-width: 50%;        
+    }
+
+    .col-2.img-content {
+        flex: 0 0 100%;
+        min-width: 100%;
+        padding: 90px;
+    }
+}
+
+@media(max-width: 850px) {
+
+    .services .row {
+        gap: 20px;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .services .row .col-4 {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    .services .row .col-4 .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 665px) {
+    
+    .nav-links {
+        display: none;
+    }
+
+    .gallery .row {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 10px
+    }
+
+    .header-content img {
+        width: 80%;
+    }
+
+    .col-2.img-content {
+        padding: 60px;
+    }
+
+    .scale-img img {
+        width: 100%;
+    }
+}
