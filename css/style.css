@@ -285,10 +285,15 @@ nav .burger a {
 .row .gallery-item .overlay-plus span {
     font-size: 90px;
     color: #fff;
+    transition: 1s;
 }
 
 .row .gallery-item:hover .overlay-plus {
     opacity: 1;
+}
+
+.row .gallery-item:hover .overlay-plus span {
+    transform: rotate(90deg);
 }
 
 .row .gallery-item:hover img {
@@ -360,7 +365,7 @@ nav .burger a {
 }
 
 .service-item:hover .text-content h6 {
-    color: rgba(197,157,95,.85);;
+    color: rgba(197,157,95,.85);
 }
 
 .service-item .text-content p {
@@ -373,6 +378,7 @@ nav .burger a {
 
 .pricing {
     padding: 80px 50px;
+    position: relative;
 }
 
 .pricing .heading-text {
@@ -399,8 +405,18 @@ nav .burger a {
     margin-top: 10px;
 }
 
+.pricing .overlay-pricing {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0) 30%, rgba(255,255,255,1) 100%);
+}
+
 .map {
     position: relative;
+    filter: invert();
 }
 
 .map iframe {
@@ -408,6 +424,7 @@ nav .burger a {
     filter: grayscale(1);
     pointer-events: none;
     z-index: 0;
+    display: block;
 }
 
 .map .pin {
@@ -417,6 +434,20 @@ nav .burger a {
     top: 50%;
     left: 50%;
     cursor: pointer;
+    filter: invert();
+}
+
+.map .overlay-map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background: rgba(0, 0, 0, 0.515); */
+    /* mix-blend-mode: color; */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, #131313 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+    filter: invert();
+    top: 0;
+    left: 0;
 }
 
 footer {
