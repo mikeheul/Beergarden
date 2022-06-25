@@ -27,13 +27,17 @@ section {
 nav {
     position: fixed;
     width: 100%;
-    padding: 30px;
+    padding: 0 0px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
     background: rgba(0, 0, 0, 0.442);
+}
+
+nav .logo {
+    padding-left: 30px;
 }
 
 nav .logo img {
@@ -67,6 +71,7 @@ nav ul li a {
 
 nav .burger {
     z-index: 20;
+    padding-right: 30px;
 }
 
 nav .burger a {
@@ -307,29 +312,37 @@ nav .burger a {
     transition: .5s;
 }
 
-.service-item:hover {
-    transform: translateY(-5px);
-}
-
 .service-item .img-content {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     transition: 1s;
-    opacity: 0.7;
 }
 
-.service-item:hover .img-content {
-    transform: scale(0.8);
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item:hover .img-content .overlay-service {
     opacity: 1;
 }
 
 .service-item .img-content img {
     transition: 0.7s;
+    position: relative;
 }
 
-.service-item:hover .img-content img {
-    /* filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.325)); */
+.service-item .img-content .overlay-service {
+    position: absolute;
+    /* background: rgb(255, 153, 0); */
+    background: linear-gradient(0deg, rgba(241,151,17,1) 1%, transparent 100%);
+    mix-blend-mode: darken;
+    width: 100px; height: 100px;
+    top: 0px; left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 1.2s;
 }
 
 .service-item .text-content {
@@ -343,6 +356,11 @@ nav .burger a {
     font-size: 16px;
     line-height: 1.3em;
     font-weight: 700;
+    transition: .5s;
+}
+
+.service-item:hover .text-content h6 {
+    color: rgba(197,157,95,.85);;
 }
 
 .service-item .text-content p {
@@ -425,6 +443,10 @@ footer {
     }
 
     .services .row .col-4 .service-item {
+        margin-top: 10px;
+    }
+
+    .services .row .col-4 .service-item .img-content .overlay-service{
         margin-top: 10px;
     }
 
