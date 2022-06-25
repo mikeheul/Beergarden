@@ -320,6 +320,7 @@ nav .burger a {
 }
 
 .service-item:hover .img-content {
+    transform: scale(0.8);
     opacity: 1;
 }
 
@@ -328,7 +329,7 @@ nav .burger a {
 }
 
 .service-item:hover .img-content img {
-    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.325));
+    /* filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.325)); */
 }
 
 .service-item .text-content {
@@ -380,10 +381,32 @@ nav .burger a {
     margin-top: 10px;
 }
 
+.map {
+    position: relative;
+}
+
 .map iframe {
     width: 100%;
     filter: grayscale(1);
     pointer-events: none;
+    z-index: 0;
+}
+
+.map .pin {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+footer {
+    padding: 80px 20px;
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width: 1000px) {
